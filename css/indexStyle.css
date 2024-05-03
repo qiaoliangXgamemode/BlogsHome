@@ -1,0 +1,141 @@
+body{
+  background: url('../assets/112344221_p4.jpg');
+  background-size: 100%;
+  font-size: 18px;
+  color: #6c767d;
+  background-color: #ebf1f5;
+ 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mwCCV{
+  position: absolute;
+	top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+.photo{
+  background-image:url('../assets/46279874.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 428px
+}
+.row{
+  background-color: white;
+  /* width: min-content(100px); */
+  width: max-content;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+.cardMe{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    padding: 50px 30px 0px;
+}
+.cardMe p>b{
+  font-size: 24px;
+  font-weight: 600;
+}
+.row-Link {
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+}
+.row-Link a{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  /* margin: 0 12px; */
+  padding: 16px 32px;
+  text-decoration-line: none;
+  color: white !important;
+}
+.row-Link a:hover{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  box-shadow:inset 10px 10px 20px rgba(0,0,0, .3);
+}
+.row-Link a:nth-child(1){
+  color: white;
+  background-color: royalblue;
+}
+.row-Link a:nth-child(2){
+  background-color: rgb(26,37,39);
+}
+.row-Link a:nth-child(3){
+  background-color: rgb(252,61,73);
+}
+.Others{
+  display: flex;
+  align-items: center;
+}
+.Others p {
+  font-size: 16px;
+}
+.Others ul{
+  padding: 0 10px;
+  display: flex;
+}
+.Others li{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  background-color: royalblue;
+  list-style: none;
+  /* margin: 0 2px; */
+  border: 1px solid rgba(0, 0, 0, 0.2 );
+  padding: 8px;
+}
+.Others li:hover{
+  margin: 0 1px;
+  border: 1px solid rgba(255,255,255);
+}
+
+.Others a,i{
+  color: whitesmoke;
+}
+
+footer {
+  font-size: 12px;
+}
+
+/* UA 适配 */
+@media screen and (max-width: 1024px) {
+  body{
+    background: none;
+  }
+  .mwCCV{
+    bottom: auto;
+  }
+  .row {
+    background-color: white;
+    /* width: max-content; */
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .cardMe{
+    padding: 50px 30px 0px;
+    border: none;
+  }
+  .photo{
+    width: auto;
+    height: 200px;
+  }
+  .row-Link a {
+    width: auto;
+    margin: 4px 0;
+  }
+}
